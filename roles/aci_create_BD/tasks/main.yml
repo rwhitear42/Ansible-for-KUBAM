@@ -1,0 +1,13 @@
+---
+# tasks file for roles/aci_create_BD
+
+- name: Add Bridge Domain
+  aci_bd:
+    hostname: '{{ inventory_hostname }}'
+    username: '{{ aci_username }}'
+    password: '{{ aci_password }}'
+    validate_certs: no
+    state: present
+    tenant: '{{tn_name}}'
+    bd: '{{bd_name}}'
+    vrf: '{{vrf_name}}'

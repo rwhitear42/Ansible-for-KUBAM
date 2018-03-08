@@ -1,0 +1,4 @@
+---
+  apic_ip: "<APIC_IP_ADDRESS>"
+  aci_username: "<APIC_USERNAME>"
+  aci_password: "<APIC_PASSWORD>"

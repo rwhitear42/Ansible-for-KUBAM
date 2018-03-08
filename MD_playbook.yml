@@ -1,0 +1,12 @@
+---
+
+- name: MickeyD Playbook
+  hosts: apic01
+  connection: local
+
+  roles:
+    - aci_create_snapshot
+    - aci_create_tenant
+    - aci_create_vrf
+    - aci_create_BD
+    - aci_create_BD_subnet

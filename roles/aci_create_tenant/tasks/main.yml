@@ -1,0 +1,14 @@
+---
+# tasks file for roles/aci_create_tenant
+#
+#
+
+- name: Add a new tenant
+  aci_tenant:
+    hostname: '{{ inventory_hostname }}'
+    username: '{{ aci_username }}'
+    password: '{{ aci_password }}'
+    validate_certs: no
+    tenant: '{{tn_name}}'
+    description: '{{tn_descr}}'
+    state: present

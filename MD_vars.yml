@@ -1,0 +1,10 @@
+---
+  # Create vars.
+  tn_name: KuBAM
+  tn_descr: 'KuBAM testing'
+
+  vrf_name: vrf-01
+  vrf_descr: 'VRF 01'
+
+  bd_name: '192.168.10.x_24'
+

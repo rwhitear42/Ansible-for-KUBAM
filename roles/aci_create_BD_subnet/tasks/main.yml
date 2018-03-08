@@ -1,0 +1,13 @@
+---
+- name: Add Subnet to BD
+  aci_bd_subnet:
+    hostname: '{{ apic_ip }}'
+    username: '{{ aci_username }}'
+    password: '{{ aci_password }}'
+    validate_certs: no
+    state: present
+    tenant: '{{tn_name}}'
+    bd: '{{bd_name}}'
+    gateway: '192.168.10.1'
+    mask: 24
+    description: 'My BD Subnet'
